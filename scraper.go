@@ -117,7 +117,7 @@ func checkCode(res *http.Response) {
 }
 
 func writeJobs(jobs []extractedJob) {
-	lk := "/zf_user/jobs/relay/view?view_type=search&rec_idx="
+	lk := "https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx="
 	file, err := os.Create("jobs.csv")
 	checkErr(err)
 
